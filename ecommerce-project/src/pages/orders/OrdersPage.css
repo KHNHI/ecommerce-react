@@ -14,9 +14,11 @@
 }
 
 .orders-page .page-title {
+  font-family: var(--font-display);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 28px;
   margin-bottom: 25px;
+  letter-spacing: -0.3px;
 }
 
 .orders-page .orders-grid {
@@ -26,8 +28,8 @@
 }
 
 .orders-page .order-header {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(222, 222, 222);
+  background-color: var(--primary-light);
+  border: 1px solid var(--border);
 
   display: flex;
   align-items: center;
@@ -87,7 +89,7 @@
 
 .orders-page .order-details-grid {
   padding: 40px 25px;
-  border: 1px solid rgb(222, 222, 222);
+  border: 1px solid var(--border);
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;

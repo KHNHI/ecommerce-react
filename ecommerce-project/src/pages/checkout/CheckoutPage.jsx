@@ -26,15 +26,15 @@ export function CheckoutPage({ cart, loadCart }) {
             <div className="checkout-header">
                 <div className="header-content">
                     <div className="checkout-header-left-section">
-                        <a href="/">
-                            <img className="logo" src="images/logo.png" />
-                            <img className="mobile-logo" src="images/mobile-logo.png" />
+                        <a href="/" className="checkout-logo-link">
+                            <span className="checkout-logo-text">Nhi<span className="checkout-logo-accent">Store</span></span>
                         </a>
                     </div>
 
                     <div className="checkout-header-middle-section">
-                        Checkout (<a className="return-to-home-link"
-                            href="/">3 items</a>)
+                        Checkout (<a className="return-to-home-link" href="/">
+                            {cart.reduce((sum, item) => sum + item.quantity, 0)} items
+                        </a>)
                     </div>
 
                     <div className="checkout-header-right-section">

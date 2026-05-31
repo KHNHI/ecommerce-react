@@ -26,13 +26,21 @@
   width: 200px;
 }
 
-.checkout-header .logo {
-  height: 26px;
-  margin-top: 0px;
+.checkout-header .checkout-logo-link {
+  text-decoration: none;
 }
 
-.checkout-header .mobile-logo {
-  display: none;
+.checkout-header .checkout-logo-text {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+
+.checkout-header .checkout-logo-accent {
+  color: var(--primary);
+  font-style: italic;
 }
 
 /* @media is used to create responsive design (making the
@@ -67,10 +75,10 @@
 }
 
 .checkout-header .return-to-home-link {
-  color: rgb(25, 135, 84);
-
+  color: var(--primary);
   text-decoration: none;
   cursor: pointer;
+  font-weight: 600;
 }
 
 @media (max-width: 1000px) {

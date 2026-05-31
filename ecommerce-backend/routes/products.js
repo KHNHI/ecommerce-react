@@ -28,4 +28,10 @@ router.get('/', async (req, res) => {
   res.json(products);
 });
 
+router.get('/:id', async (req, res) => {
+  const product = await Product.findByPk(req.params.id);
+  if (!product) return res.status(404).json({ error: 'Product not found' });
+  res.json(product);
+});
+
 export default router;

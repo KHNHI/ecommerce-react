@@ -1,6 +1,6 @@
 .tracking-page {
   max-width: 850px;
-  margin-top: 90px;
+  margin-top: 100px;
   margin-bottom: 100px;
   padding-left: 30px;
   padding-right: 30px;
@@ -19,9 +19,11 @@
 }
 
 .tracking-page .delivery-date {
-  font-size: 25px;
+  font-family: var(--font-display);
+  font-size: 26px;
   font-weight: 700;
   margin-bottom: 10px;
+  letter-spacing: -0.3px;
 }
 
 .tracking-page .product-info {
@@ -44,7 +46,7 @@
 }
 
 .tracking-page .current-status {
-  color: rgb(25, 135, 84);
+  color: var(--primary);
 }
 
 @media (max-width: 575px) {
@@ -75,7 +77,7 @@
 
 .tracking-page .progress-bar {
   height: 100%;
-  background-color: rgb(25, 135, 84);
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-hover) 100%);
   border-radius: 50px;
   width: 50%;
 }
